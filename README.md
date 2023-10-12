@@ -8,10 +8,12 @@ Home Page:
 
 
 Projects Page:
-<img width="1661" alt="Screenshot 2023-10-02 at 2 05 21 PM" src="https://github.com/oscarabreu/Personal-Portfolio/assets/99779654/d8a376a3-ab00-42e1-a9c3-ec1450d4eb92">
+<img width="1660" alt="Screenshot 2023-10-02 at 2 05 21 PM" src="https://github.com/oscarabreu/Personal-Portfolio/assets/99779654/d8a376a3-ab00-42e1-a9c3-ec1450d4eb92">
 
 Blog Page:
 <Currently in Development>
+<img width="1660" alt="Screenshot 2023-10-02 at 2 05 21 PM" src="https://github.com/oscarabreu/Personal-Portfolio/assets/99779654/8c34706e-bb9d-4723-a5ed-9af1363e93d7">
 
 Fun Page:
 <Currently in Development>
+<img width="1660" alt="Screenshot 2023-10-02 at 2 05 21 PM" src="https://github.com/oscarabreu/Personal-Portfolio/assets/99779654/8c34706e-bb9d-4723-a5ed-9af1363e93d7">
