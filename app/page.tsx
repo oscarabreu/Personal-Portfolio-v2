@@ -1,17 +1,13 @@
-import HeroSection from "@/components/HeroSection"
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+/** @format */
+
+import HeroSection from "@/components/HeroSection";
+
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen font-body bg-bgclr overflow-y-scroll">
-      <Navbar />
-      <main className="flex flex-grow justify-center md:py-1/10 min-h-full text-sm max-md:p-10 md:m-10">
+    <div className="flex flex-col min-h-screen font-body bg-bgclr ">
+      <main className="text-sm my-10 px-5">
         <HeroSection />
       </main>
-      <Footer />
     </div>
-  )
+  );
 }
-
-
-

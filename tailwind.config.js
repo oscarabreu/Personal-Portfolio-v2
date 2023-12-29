@@ -1,4 +1,8 @@
-/** @type {import('tailwindcss').Config} */
+/**
+ * @format
+ * @type {import('tailwindcss').Config}
+ */
+
 module.exports = {
   darkMode: "class",
   content: [
@@ -41,65 +45,68 @@ module.exports = {
         },
       },
       fontFamily: {
-        body1: 'Lato',
-        body2: 'Montserrat',
-        body3: 'Open Sans',
-        body4: 'Roboto',
-      },      
+        body1: "Lato",
+        body2: "Montserrat",
+        body3: "Open Sans",
+        body4: "Roboto",
+      },
       colors: {
-        bgclr: '#09192a',
-        bgclr2: '#14283e',
-        bgclr3: '#112235',
-        txtclr: '#c2c2dd', 
-        txtclr2: '#dde0e7',
-        txtclr3: '#dae9f7',
-        hclr: '#fcdbb2',
-        hclr2: '#fbcc92',
-        hclr3: '#9fd8e5',
-        
+        bgclr: "#0f172b",
+        bgclr2: "#0f172b",
+        bgclr3: "#0f172b",
+        txtclr: "#d0d0d0",
+        txtclr2: "#d0d0d0",
+        txtclr3: "#d0d0d0",
+        hclr: "#EDC9AF",
+        hclr2: "#EDC9AF",
+        hclr3: "#EDC9AF",
       },
       maxWidth: {
-        '100': '100rem',
-        '300': '300px',
-        '450': '450px',
-
+        100: "100rem",
+        300: "300px",
+        450: "450px",
+        250: "250px",
       },
       minWidth: {
-        '140': '140px',
-        '350': '350px',
-        '300': '300px',
-        '450': '450px',
+        140: "140px",
+        350: "350px",
+        300: "300px",
+        450: "450px",
+        250: "250px",
       },
 
       width: {
-        '5xl': '64rem',
+        "5xl": "64rem",
       },
 
       minHeight: {
-        '500': '500px',
-        '350': '350px',
-        '475': '475px',
-        '450': '450px',
-        '600': '600px',
-
+        500: "500px",
+        350: "350px",
+        475: "475px",
+        450: "450px",
+        600: "600px",
+        250: "250px",
       },
       maxHeight: {
-        '350': '350px',
-        '450': '450px',
-        '600': '600px',
+        350: "350px",
+        450: "450px",
+        600: "600px",
+        250: "250px",
+        325: "325px",
+        300: "300px",
       },
       padding: {
-        '1/10': '10vh',
+        "1/10": "10vh",
       },
       fontSize: {
-        'base-lg': '1.0rem',  // or whatever name you prefer
+        "base-lg": "1.0rem", // or whatever name you prefer
       },
       screens: {
-        'max-sm': {'max': '639px'},
-        'max-md': {'max': '767px'},
-        'max-lg': {'max': '1023px'}
+        "max-sm": { max: "639px" },
+        "max-md": { max: "767px" },
+        "max-lg": { max: "1023px" },
       },
     },
   },
   plugins: [],
-}
+};
