@@ -30,11 +30,11 @@ const NAV_ITEMS: Array<NavItem> = [
 
 const Profile = () => {
   return (
-    <section className="flex flex-col justify-center items-center max-md:border-txtclr">
+    <section className="flex flex-col justify-center items-center max-md:border-txtclr ">
       <div className="flex justify-center">
         <div
           className="relative overflow-hidden rounded-full"
-          style={{ width: "120px", height: "120px" }}
+          style={{ width: "100px", height: "100px" }}
         >
           <Image
             src="/headshot.jpg"
@@ -47,19 +47,19 @@ const Profile = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center space-y-4 py-8 text-sm text-center text-txtclr">
-        <h1 className="text-hclr3">Oscar Abreu</h1>
+      <div className="flex flex-col justify-center items-center space-y-4 max-md:pb-0 md:pt-8 text-sm text-center text-txtclr">
+        <h1 className="text-hclr">Oscar Abreu</h1>
         <h3>
           MSCE at NYU <br></br> May 2024
         </h3>
-        <div className="flex flex-row items-center justify-center space-x-3">
+        <div className="flex flex-row items-center justify-center space-x-3 text-txtclr">
           <a
             href="https://github.com/oscarabreu"
             rel="noreferrer"
             target="_blank"
           >
             <AiOutlineGithub
-              className="hover:-translate-y-1 hover:text-hclr2 transition-transform cursor-pointer text-txtclr3 dext--txtclr3"
+              className="hover:-translate-y-1 hover:text-hclr transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -69,7 +69,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineTwitter
-              className="hover:-translate-y-1 hover:text-hclr2 transition-transform cursor-pointer text-txtclr3 dext--txtclr3"
+              className="hover:-translate-y-1 hover:text-hclr transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -80,7 +80,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineLinkedin
-              className="hover:-translate-y-1 hover:text-hclr2 transition-transform cursor-pointer text-txtclr3 dext--txtclr3"
+              className="hover:-translate-y-1 hover:text-hclr transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -90,7 +90,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineYoutube
-              className="hover:-translate-y-1 hover:text-hclr2 transition-transform cursor-pointer text-txtclr3 dext--txtclr3"
+              className="hover:-translate-y-1 hover:text-hclr transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -103,14 +103,12 @@ const Profile = () => {
                 <a
                   className={`block lg:inline-block rounded ${
                     isLastItem
-                      ? "bg-hclr text-bgclr border-txtclr hover:bg-hclr2"
-                      : "text-txtclr3 bg-bgclr border-txtclr hover:bg-txtclr3"
+                      ? "bg-hclr text-bgclr border-txtclr hover:bg-hclr"
+                      : "text-txtclr bg-bgclr border-txtclr hover:bg-txtclr"
                   } hover:text-bgclr border px-4 py-1`}
                 >
                   {item.label}
-                  {isLastItem && (
-                    <BsArrowUpRight className="inline ml-2 -translate-y-0.5 max-lg:hidden" />
-                  )}
+                  {isLastItem}
                 </a>
               </Link>
             );

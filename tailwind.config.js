@@ -52,14 +52,9 @@ module.exports = {
       },
       colors: {
         bgclr: "#0f172b",
-        bgclr2: "#0f172b",
-        bgclr3: "#0f172b",
-        txtclr: "#d0d0d0",
-        txtclr2: "#d0d0d0",
-        txtclr3: "#d0d0d0",
-        hclr: "#EDC9AF",
-        hclr2: "#EDC9AF",
-        hclr3: "#EDC9AF",
+        txtclr: "#c6cbd1",
+        txtclr: "#f2f4f6",
+        hclr: "#D5B49D",
       },
       maxWidth: {
         100: "100rem",
@@ -92,8 +87,10 @@ module.exports = {
         450: "450px",
         600: "600px",
         250: "250px",
+        275: "275px",
         325: "325px",
         300: "300px",
+        150: "150px",
       },
       padding: {
         "1/10": "10vh",
@@ -104,7 +101,7 @@ module.exports = {
       screens: {
         "max-sm": { max: "639px" },
         "max-md": { max: "767px" },
-        "max-lg": { max: "1023px" },
+        "max-lg": { max: "825px" },
       },
     },
   },
