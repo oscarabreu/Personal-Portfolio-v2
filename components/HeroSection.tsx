@@ -45,7 +45,7 @@ const HeroSection = () => {
   return (
     <section id="home">
       {/* Div for the entire vertical container */}
-      <div className="flex flex-col max-w-5xl m-auto text-txtclr text-base-lg">
+      <div className="flex flex-col max-w-4xl m-auto text-txtclr text-lg">
         {/* Div for the nav bar */}
         <div className="flex justify-center md:justify-start pt-4 pb-12">
           <Nav></Nav>
@@ -60,7 +60,7 @@ const HeroSection = () => {
               Hey, I am&nbsp;<span className="text-hclr">Oscar</span>
             </h2>
             {/* <h2 className="font-bold max-md:text-center">About me:</h2> */}
-            <p className="max-md:flex max-md:justify-center">
+            <p className="max-md:flex max-md:justify-center text-base">
               Welcome to my page! I first embarked on my academic path with a BS
               in Biochemistry at Binghamton University, only to find my passion
               within Software Engineering. It all started with a hobby in
@@ -70,7 +70,7 @@ const HeroSection = () => {
               fundamentals and successfully earned my place in the Master of
               Science in Computer Engineering program.
             </p>
-            <p className="max-md:justify-center">
+            <p className="max-md:justify-center text-base">
               I&apos;ve independently explored myriad fields in Software and
               Computer Engineering though projects and coursework, and narrowed
               my passions toward&nbsp;
@@ -132,7 +132,7 @@ const HeroSection = () => {
         </div>
         <hr></hr>
         {/* Div for the entire Featured Project container */}
-        <div className="flex flex-row h-auto items-center py-4">
+        <div className="flex flex-row h-auto justify-center items-center py-4 ">
           <div>
             <a
               className="flex items-center hover:text-hclr text-3xl mr-4"
@@ -146,19 +146,19 @@ const HeroSection = () => {
           {/* Div for the project container */}
           <div className="relative flex">
             <div
-              className=" flex flex-col justify-around lg:items-start max-lg:absolute max-lg:items-center max-lg:justify-center max-lg:space-y-4 
-                              top-0 left-0 right-0 bottom-0 flex flex-col
+              className=" flex flex-col justify-between md:items-start max-md:absolute max-md:items-center max-md:justify-center max-md:space-y-4 
+                              top-0 left-0 right-0 bottom-0 flex flex-col z-20 lg:w-1/2 mr-4
                               "
             >
               <p>Featured Project</p>
               <h3 className="text-2xl font-bold text-hclr">Ray-Tracer</h3>
-              <p className="text-sm max-lg:text-center text-txtclr">
+              <p className="text-sm max-md:text-center text-txtclr">
                 {" "}
                 A graphic ray-tracer built from scratch, optimized with CUDA{" "}
               </p>
               <div className="text-2xl flex flex-gap gap-4 flex-row">
                 <a
-                  className="text-txtclr hover:text-hclr"
+                  className="text-txtclr hover:text-hclr "
                   href="https://github.com"
                   target="_blank"
                   rel="noreferrer"
@@ -166,7 +166,7 @@ const HeroSection = () => {
                   <AiOutlineGithub />
                 </a>
                 <a
-                  className="text-txtclr hover:text-hclr"
+                  className="text-txtclr hover:text-hclr "
                   href="https://google.com"
                   target="_blank"
                   rel="noreferrer"
@@ -174,7 +174,7 @@ const HeroSection = () => {
                   <AiOutlineApartment />
                 </a>
               </div>
-              <ul className="text-xs flex gap-2 flex flex-wrap max-lg:justify-center">
+              <ul className="text-xs flex gap-1 flex flex-wrap max-md:justify-center">
                 <li className="border rounded px-2 py-1 bg-bgclr text-hclr border-hclr">
                   C++
                 </li>
@@ -197,11 +197,12 @@ const HeroSection = () => {
             </div>
             <div>
               <Image
-                className="flex flex-grow max-lg:opacity-20 py-2 max-h-300"
+                className="flex max-md:opacity-20 py-2 max-h-300 mx-auto"
                 src="/image1.png"
                 alt="Ray Tracing Image"
                 width={900}
                 height={600}
+                priority
               />
             </div>
           </div>
@@ -217,31 +218,51 @@ const HeroSection = () => {
           </div>
         </div>
         <hr></hr>
-        <div className="flex relative flex-col md:flex-row md:max-h-300 text-sm">
-          <div className="py-4 flex flex-col text-center justify-center md:w-1/3 md:border-r max-h-250">
-            <h4> Recent Blogs:</h4>
-            <br></br>
-            <a href="https://pluh.com" className="underline text-hclr">
-              {" "}
-              Intuition for Dynamic Programming - 10 Comprehensive Problems &
-              Explanations
-            </a>
-            <br></br>
-            <div className="flex flex-row flex-wrap justify-center">
-              <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
-                Data Structures
-              </p>
-              <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
-                Python
-              </p>
-              <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
-                C++
-              </p>
+        <div className="flex relative flex-col md:flex-row text-sm">
+          <div className="flex flex-col text-center justify-center md:w-1/3 py-4 px-2">
+            <h4 className="pb-4"> Recent Blogs:</h4>
+            <div className="pb-4">
+              <a href="https://pluh.com" className="underline text-hclr">
+                {" "}
+                Intuition for Dynamic Programming - 10 Comprehensive Problems &
+                Explanations
+              </a>
+              <br></br>
+              <div className="flex flex-row flex-wrap justify-center pt-4">
+                <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
+                  Data Structures
+                </p>
+                <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
+                  Python
+                </p>
+                <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
+                  C++
+                </p>
+              </div>
+            </div>
+            <div className="pb-4">
+              <a href="https://pluh.com" className="underline text-hclr">
+                {" "}
+                Constructing a Swin Transformer - Intuition & Code
+              </a>
+              <br></br>
+              <div className="flex flex-row flex-wrap justify-center pt-4">
+                <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
+                  Computer Vision
+                </p>
+                <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
+                  Transformers
+                </p>
+                <p className="text-hclr border border-hclr px-2 py-1 mx-1 my-1 text-xs rounded">
+                  Python
+                </p>
+              </div>
             </div>
           </div>
-          <div className="py-4 flex flex-col text-center justify-center md:w-1/3 md:border-r max-h-250">
+          <hr className="md:hidden"></hr>
+          <div className="py-4 px-2 flex flex-col text-center justify-center md:w-1/3 md:border-l md:border-r ">
             <h4 className="pb-4"> Reading List:</h4>
-            <div className="flex flex-row justify-center">
+            <div className="flex flex-row justify-center ">
               <a
                 className="flex items-center hover:text-hclr text-xl mr-2"
                 href="https://github.com"
@@ -250,15 +271,16 @@ const HeroSection = () => {
               >
                 <AiFillCaretLeft />
               </a>
-              <Image
-                className="w-1/3 mx-auto"
-                src="/textbook/ddia.jpg"
-                alt="Designing Data Intensive Applications"
-                width={381}
-                height={498}
-              />
-
-              <div className="flex flex-col justify-center text-center text-hclr">
+              <div className="flex justify-center items-center ">
+                <Image
+                  src="/textbook/ddia.jpg"
+                  alt="Designing Data Intensive Applications"
+                  width={190}
+                  height={250}
+                  className="justify-center items-center "
+                />
+              </div>
+              <div className="flex flex-col justify-center text-center text-hclr w-3/4 px-2 py-4 max-h-300">
                 <h4>
                   Designing Data Intensive Applications by Martin Kleppman
                 </h4>
@@ -279,19 +301,24 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-          <div className="py-4 flex flex-col text-center justify-center md:w-1/3 max-h-250">
-            <h4 className="pb-4"> My Art/Photography:</h4>
-            <Image
-              className="w-3/4 mx-auto pb-4"
-              src="/pixelart.png"
-              alt="Ray Tracing Image"
-              width={600}
-              height={400}
-            />
+          <hr className="md:hidden"></hr>
+          <div className="py-4 px-2 flex flex-col text-center justify-center md:w-1/3 max-md:max-h-300 space-y-4">
+            <h4> My Art/Photography:</h4>
+            <div className="mx-auto">
+              <Image
+                src="/pixelart.png"
+                alt="PixelArt Image"
+                width={500}
+                height={381}
+                className="max-md:max-h-200 object-contain"
+                priority
+              />
+            </div>
             <p>Pixel Art - Composed by Studio Ghibli</p>
           </div>
         </div>
-        <hr></hr>
+
+        <hr className="max-lg:hidden"></hr>
       </div>
     </section>
   );

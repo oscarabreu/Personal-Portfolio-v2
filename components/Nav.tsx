@@ -8,7 +8,7 @@ import useRouter from "next/router";
 
 const Nav = () => {
   return (
-    <section className="flex text-base">
+    <section className="flex text-lg">
       <div className="flex justify-center"></div>
       <ul className="flex flex-row items-center text-txtclr ">
         <li className="border-transparent hover:border-hclr hover:text-hclr px-2 rounded group text-hclr ">

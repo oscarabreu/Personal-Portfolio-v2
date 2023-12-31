@@ -15,7 +15,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
+      screens: { sm: "480px", md: "768px", md: "976px", xl: "1440pd" },
       animation: {
         fadeIn: "fadeIn 1.5s",
         bounce:
@@ -91,6 +91,8 @@ module.exports = {
         325: "325px",
         300: "300px",
         150: "150px",
+        225: "225px",
+        200: "200px",
       },
       padding: {
         "1/10": "10vh",
@@ -100,8 +102,8 @@ module.exports = {
       },
       screens: {
         "max-sm": { max: "639px" },
-        "max-md": { max: "767px" },
-        "max-lg": { max: "825px" },
+        "max-md": { max: "768px" },
+        "max-lg": { max: "1024px" },
       },
     },
   },

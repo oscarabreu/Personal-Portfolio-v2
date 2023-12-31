@@ -32,22 +32,23 @@ const Profile = () => {
   return (
     <section className="flex flex-col justify-center items-center max-md:border-txtclr ">
       <div className="flex justify-center">
-        <div
-          className="relative overflow-hidden rounded-full"
-          style={{ width: "100px", height: "100px" }}
-        >
+        <div style={{ width: "100px", height: "100px" }}>
           <Image
             src="/headshot.jpg"
             alt="Oscar's Headshot"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="top" // Aligns to the top
+            width={100}
+            height={100}
             priority
-            className="rounded-full" // Adds margin to the left, moving the image to the right
+            style={{
+              width: "100px",
+              height: "100px",
+              objectPosition: "top center",
+            }}
+            className="object-cover rounded-full w-auto"
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center space-y-4 max-md:pb-0 md:pt-8 text-sm text-center text-txtclr">
+      <div className="flex flex-col justify-center items-center space-y-4 max-md:pb-0 pt-8 text-sm text-center text-txtclr">
         <h1 className="text-hclr">Oscar Abreu</h1>
         <h3>
           MSCE at NYU <br></br> May 2024
@@ -101,7 +102,7 @@ const Profile = () => {
             return (
               <Link legacyBehavior key={idx} href={item.page}>
                 <a
-                  className={`block lg:inline-block rounded ${
+                  className={`block md:inline-block rounded ${
                     isLastItem
                       ? "bg-hclr text-bgclr border-txtclr hover:bg-hclr"
                       : "text-txtclr bg-bgclr border-txtclr hover:bg-txtclr"
