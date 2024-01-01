@@ -198,7 +198,7 @@ const HeroSection = () => {
             <div>
               <Image
                 className="flex max-md:opacity-20 py-2 max-h-300 mx-auto"
-                src="/image1.png"
+                src="/pixelart.png"
                 alt="Ray Tracing Image"
                 width={900}
                 height={600}
