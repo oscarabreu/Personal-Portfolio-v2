@@ -52,9 +52,9 @@ module.exports = {
       },
       colors: {
         bgclr: "#0f172b",
-        txtclr: "#c6cbd1",
-        txtclr: "#f2f4f6",
-        hclr: "#D5B49D",
+        txtclr: "#c9c0c4",
+        hclr: "#1285bd",
+        ytclr: "#f2f4f6"
       },
       maxWidth: {
         100: "100rem",
@@ -104,6 +104,7 @@ module.exports = {
         "max-sm": { max: "639px" },
         "max-md": { max: "768px" },
         "max-lg": { max: "1024px" },
+        "max-category-w": { max: "884px" },
       },
     },
   },

@@ -60,7 +60,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineGithub
-              className="hover:-translate-y-1 hover:text-hclr transition-transform cursor-pointer text-txtclr dext--txtclr"
+              className="hover:-translate-y-1 hover:text-ytclr transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -70,7 +70,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineTwitter
-              className="hover:-translate-y-1 hover:text-hclr transition-transform cursor-pointer text-txtclr dext--txtclr"
+              className="hover:-translate-y-1 hover:text-ytclr transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -81,7 +81,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineLinkedin
-              className="hover:-translate-y-1 hover:text-hclr transition-transform cursor-pointer text-txtclr dext--txtclr"
+              className="hover:-translate-y-1 hover:text-ytclr transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -91,7 +91,7 @@ const Profile = () => {
             target="_blank"
           >
             <AiOutlineYoutube
-              className="hover:-translate-y-1 hover:text-hclr transition-transform cursor-pointer text-txtclr dext--txtclr"
+              className="hover:-translate-y-1 hover:text-ytclr transition-transform cursor-pointer text-txtclr dext--txtclr"
               size={30}
             />
           </a>
@@ -104,8 +104,8 @@ const Profile = () => {
                 <a
                   className={`block md:inline-block rounded ${
                     isLastItem
-                      ? "bg-hclr text-bgclr border-txtclr hover:bg-hclr"
-                      : "text-txtclr bg-bgclr border-txtclr hover:bg-txtclr"
+                      ? "bg-txtclr text-gray-800 border-gray-800 hover:bg-ytclr"
+                      : "text-txtclr bg-bgclr border-txtclr hover:bg-ytclr"
                   } hover:text-bgclr border px-4 py-1`}
                 >
                   {item.label}
